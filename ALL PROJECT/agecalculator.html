@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calulator with the help of html,css,javascript</title>
+    <style>
+       body{
+       
+        background-image:linear-gradient(to right,violet,blue,violet);
+        
+       }
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 520px;
+            height: 320px;
+            margin-left: 25%;
+            margin-top: 80px;
+            background-color: #eee;
+            border-radius: 5px;
+        }
+        
+        .base h4{
+            font-size: 26px;
+            text-align: center;
+            font-family:  sans-serif;
+            font-weight: normal;
+            margin-top: 0px;
+            box-shadow: 0px 2px #bbb ; 
+            background: white;
+            font-size: 34px;
+            color: navy;
+        }
+        .block{
+            width: 135px;
+            padding: 5px 20px;
+            margin-left: 20px;
+            display: inline-block;
+            float: left;
+        }
+        .title{
+            color: navy;
+        }
+        input[type=text]{
+            width: 140px;
+            border: 2px solid black;
+            background-color: #f7f7f7;
+            border-radius: 2px;
+            color: #107310;
+        }
+        
+        input[type=button]{
+            width: 150px;
+            margin-left: 35%;
+            margin-top: 40px;
+            border-radius: 2px;
+            border: 2px solid black;
+            background-color:#6290ba ;
+            color: navy;
+
+        }
+        input[type= button]:hover{
+            background-color: #003669;
+        }
+
+        #age{
+            display: block;
+            margin: 10px;
+            margin-top: 35px;
+            padding:10px;
+            padding-bottom: 20px;
+            font-family: Arial;
+            font-size: 15px;
+            word-spacing: 2.7px;
+            color: navy;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<form>
+    <div class="base">
+        <h4>Age calculator</h4>
+<div class="block">
+    <p class="title">Date</p>
+    <input type="text" name="date" id="date" placeholder="dd" required="required" minlength="1" maxlength="2" />
+</div>
+<div class="block">
+    <p class="title">Month</p>
+    <input type="text" name="month" id="month" placeholder="mm" required="required" minlength="1" maxlength="2" />
+</div>
+<div class="block">
+    <p class="title">Year</p>
+    <input type="text" name="year" id="year" placeholder="yyyy" required="required" minlength="4" maxlength="4" />
+</div>
+<div class="base">
+<input type="button" name="submit" value="submit" onclick="age()" />
+<div id="age"></div>
+    </div>
+</form>
+
+
+    <script src="agecalculator.js"></script>
+</body>
+</html>
