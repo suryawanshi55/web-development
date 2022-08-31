@@ -1,0 +1,40 @@
+.containor{
+    background-color: blueviolet;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    
+    column-gap: 13px;
+    row-gap: 13px;
+}
+.item1{
+    background-color: aqua;
+    /* height: 122px;
+    width: 122px; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}
+.item2{
+    background-color: aqua;
+    height: 122px;
+    width: 122px;
+}
+.item3{
+    background-color: aqua;
+    height: 122px;
+    width: 122px;
+}
+.item4{
+    background-color: aqua;
+    height: 133px;
+    width: 200px;
+}
+.item5{
+    background-color: aqua;
+    /* height: 122px;
+    width: 122px; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
