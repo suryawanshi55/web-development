@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript can change the HTML content</title>
+</head>
+<body>
+    <!-- javascript HTML method -->
+    <!-- 1)document.getElementById() -->
+    <!-- find html element with Id and change the element content (innerhtml) -->
+
+    <!-- <p>change the element content to javascript</p> -->
+    <p id="demo">hello world</p>
+    <button type="button"
+     onclick="document.getElementById('demo').innerHTML = 'hellojavascript!'">click me</button>
+
+     <h1 id="try">this is a javascript</h1>
+     <button type="button" onclick="document.getElementById('try').innerHTML='this is a java'">click on me!</button>
+
+     <h3 id="sch">this school is big</h3>
+     <button type="button"onclick="document.getElementById('sch').innerHTML='school!'">click!</button>
+
+     <!-- javascript can change HTML style(CSS) -->
+     <p id="try">this is a javascript</p>
+     <button type="button" onclick="document.getElementById('try').style.fontSize='55px'">click on me!</button>
+
+     <!-- javascript can hide or show html element -->
+                  <!-- hide element -->
+    <p id="demo">hello world</p>
+    <button type="button" onclick="document.getElementById('demo').style.display='none'">click!</button>
+
+                    <!-- show element -->
+    <p id="demo" style="display: none">hello world this is a javascript!</p>
+    <button type="button" onclick="document.getElementById('demo').style.display='block'">click!</button>
+</body>
+</html>
