@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template literals</title>
+</head>
+<body>
+    <P id="demo"></P>
+    <P id="gh"></P>
+    <P id="hr"></P>
+    <p id="rest"></p>
+    <P id="optr"></P>
+    <script>
+    let text=`hello world`;
+document.getElementById("demo").innerHTML=text;
+let trf=`house is "big"`;
+document.getElementById("gh").innerHTML=trf;
+let opt=`this
+  is a pen
+   with cover`
+   document.getElementById("hr").innerHTML=opt;
+    </script>
+    <!-- variable substitution -->
+    <script>
+let frist= "pooja";
+let last= "sharma";
+let txt=`welcome  ${'pooja'} ${'sharma'}`;
+ document.getElementById("rest").innerHTML=txt;
+    </script>
+               <!-- Expression substitution -->
+               <script>
+  let val=90;
+  let pri=67;
+  let total=`total: ${(v*(1+p)).toFixed(2)}`;
+  document.getElementById("optr").innerHTML=total
+
+    
+
+    </script>
+</body>
+</html>

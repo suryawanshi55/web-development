@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript search method</title>
+</head>
+<body>
+    <!-- Javascript search method -->
+                  <!-- indexOf -->
+    <p id="demo"></p>
+    <P id="try"></P>
+    <P id="you"></P>
+    <P id="klm"></P>
+    <p id="hr"></p>
+    <P id="ask"></P>
+    <P id="asr"></P>
+    <P id="mno"></P>
+    
+    <script>
+        // let str="Be a stronger ,faster,higher";
+        // document.getElementById("demo").innerHTML=str.indexOf("faster");
+        // let ptr="this is a garden"
+        // document.getElementById("try").innerHTML=ptr.lastIndexOf("d");
+        // let opt="lion is a king of animal";
+        // document.getElementById("you").innerHTML=opt.lastIndexOf("puts");
+        let we="your cat is where there is mine";
+        document.getElementById("klm").innerHTML=we.indexOf("is,10");
+        let dear="not my cup of tea";
+        document.getElementById("hr").innerHTML=dear.search("of");
+         let kyu="that's not enough";
+         document.getElementById("ask").innerHTML=kyu.includes("not");
+        let fish="give me a pen";
+        document.getElementById("asr").innerHTML=fish.startsWith("pen");
+        let variable="variable can store the data";
+        document.getElementById("mno").innerHTML=variable.endsWith("can")
+    </script>
+               
+
+</body>
+</html>
