@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call function</title>
+</head>
+<body>
+    <P id="demo"></P>
+    <script>
+const person={
+    fullname:function(){
+        return this.fristname+" "+this.lastname;
+    }
+}
+const person1={
+    fristname:"pooja",
+    lastname:"sharma"
+}
+const person2={
+    fristname:"nitu",
+    lastname:"shindee"
+}
+document.getElementById("demo").innerHTML=
+         person.fullname.call(person2);
+
+
+    </script>
+   
+</body>
+</html>

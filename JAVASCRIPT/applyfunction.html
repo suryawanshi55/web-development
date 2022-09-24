@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply function</title>
+</head>
+<body>
+    <P id="demo"></P>
+    <script>
+        let person={
+            fullname:function(city,country)
+            {
+                return this.fristname+" "+this.lastname+","+city+","+country;
+            }
+        }
+        const person1 ={
+            fristname:"john",
+            lastname:"sharma"
+        }
+        document.getElementById("demo").innerHTML=
+        person.fullname.apply(person1,["mumbai","india"]);
+    </script>
+    <P id="try"></P>
+    <script>
+        document.getElementById("try").innerHTML=Math.max(6,8,5);
+    </script>
+</body>
+</html>

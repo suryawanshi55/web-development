@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bind function</title>
+</head>
+<body>
+    <P id="demo"></P>
+    <script>
+        const person={
+            fristName:"pooja",
+             lastName:"sharma",
+            fullName:function(){
+                return ths.fristname+" "+this.lastname;
+            }
+        }
+        const member={
+            fristName:"nitu",
+            lastName:"shinde",
+        }
+        let fullName=person.fullName.bind(member);
+        document.getElementById("demo").innerHTML=fullName();
+    </script>
+    <P id="try"></P>
+    <script>
+        const person1={
+            fristName:"riya",
+            lastName:"doe",
+            display:function(){
+                let x=document.getElementById("try");
+                x.innerHTML=this.fristName+" "+lastName;
+            }
+            let display =person1.display.bind(person1);
+            setTimeout( display,3000);
+                
+        
+
+        }
+    </script>
+</body>
+</html>
