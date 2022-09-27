@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript classes</title>
+</head>
+<body>
+    <P id="demo"></P>
+    <script>
+        class school{
+            constructor(name,year){
+                this.name=name;
+                this.year=year;
+            }
+           
+            
+        }
+        const myschool=new school("haward",1999);
+        document.getElementById("demo").innerHTML=myschool.name+" "+myschool.year;
+    </script>
+    <P id="try"></P>
+    <script>
+        class city{
+            constructor(name,year){
+                this.name=name;
+                this.year=year;
+            }
+        }
+        let vhcity=new city ("Pune",2100);
+        document.getElementById("try").innerHTML=vhcity.name+" "+vhcity.year;
+    </script>
+    <P id="vh"></P>
+    <script>
+        class house{
+            constructor(name,year){
+                this.name=name;
+                this.year=year;
+            }
+        }
+        let vihouse=new house("kirtana",3456);
+        document.getElementById("vh").innerHTML= vihouse.name+" "+vihouse.year;
+    </script>
+</body>
+</html>
