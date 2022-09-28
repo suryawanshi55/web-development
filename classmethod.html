@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class method</title>
+</head>
+<body>
+    <P id="demo"></P>
+    <script>
+        class brand{
+            constructor(name,year){
+                this.name=name;
+                this.year=year;
+            }
+            age(){
+                let date= new Date();
+                return date.getFullYear()-this.year;
+            }
+        }
+       let mybrand=new brand("hyndai",2019);
+       document.getElementById("demo").innerHTML=mybrand.name+" " +mybrand.age();
+    </script>
+    <P id="try"></P>
+    <script>
+        class crickter{
+            constructor(name,year){
+                this.name=name;
+                this.year=year;
+            }
+            age(x){
+                let date= new Date();
+                return x -this.year;
+            }
+        }
+       let mycrickter=new crickter("dhoni",2019);
+       document.getElementById("try").innerHTML=mycrickter.name+" " +mycrickter.age(2000);
+    </script>
+</body>
+</html>
