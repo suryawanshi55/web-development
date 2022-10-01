@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Accessors</title>
+</head>
+<body>
+    <!-- javascript Accessors(getters and setters) -->
+    <!-- javascript Getter(the get keyword) -->
+    <P id="demo"></P>
+    <script>
+        let person={
+            name:"rohan",
+            Age:45,
+            languange:"english",
+            get lang (){
+                return this.languange;
+            }
+
+        }
+        document.getElementById("demo").innerHTML=person.lang;
+
+    </script>
+    <!-- javascript setter (to set the value) -->
+    <P id="man"></P>
+    <script>
+        let pet={
+            name:"dog",
+            Age:4,
+            languange:"no",
+            set lang(value){
+                 this.languange=value;
+            }
+            
+
+        }
+        pet.lang="bark"
+        document.getElementById("man").innerHTML=pet.languange;
+
+    </script>
+
+</body>
+</html>
