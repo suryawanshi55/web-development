@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a object</title>
+</head>
+<body>
+    <!-- Using literal object -->
+    <P id="demo"></P>
+    <P id="try"></P>
+    <script>
+        const person={
+            fristName:"pooja",
+            lastName:"shinde",
+            age:25,
+
+        }
+        document.getElementById("demo").innerHTML=person.fristName+" "+person.age;
+        const student={
+            fristName:"pooja",lastName:"shinde",age:25,
+
+        }
+        document.getElementById("try").innerHTML=student.fristName+" is "+student.age+"year old";
+    </script>
+                    <!-- create empty object -->
+    <P id="you"></P>
+    <script>
+        let girl={};
+        girl.name="nitu",
+        girl.lastName="sharma",
+        girl.hobby="drawing",
+        document.getElementById("you").innerHTML=girl.name+" hobby is "+girl.hobby;
+    </script>
+        <!-- using a keyword New object() -->
+        <P id="gh"></P>
+        <script>
+            let car =new Object();
+            car.name="Kia",
+            car.price=300000,
+            document.getElementById("gh").innerHTML=car.name+" "+car.price;
+
+        </script>
+</body>
+</html>
