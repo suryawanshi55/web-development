@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Displaying javascript object</title>
+</head>
+<body>
+    <P id="jkl"></P>
+    <script>
+        let text={
+            name:"storybook",
+            page:77,
+            books:115,
+
+        }
+        document.getElementById("jkl").innerHTML=text;
+
+    </script>
+    <!-- Displaying object properties -->
+    <P id="demo"></P>
+    <script>
+        let person={
+            name:"Amit",
+            age:45,
+            work:"PSI"
+        }
+        document.getElementById("demo").innerHTML=person.name+" "+person.work;
+    </script>
+    <!-- Displaying object in loop -->
+    <P id="try"></P>
+    <script>
+        let menu={
+            name:"pavbhaji",
+            price:30,
+
+        }
+        let food=""
+        for(let y in menu ){
+            food +=menu[y]+" ";
+        };
+        document.getElementById("try").innerHTML=food;
+    </script>
+         <!-- using Object.value -->
+         <P id="kio"></P>
+         <script>
+            const fruit={
+                name:"mango",
+                price:80,
+            };
+            const myArray=
+            Object.values(fruit);
+            document.getElementById("kio").innerHTML=myArray;
+            
+         </script>
+          <!-- using JSON.stingify -->
+          <P id="ask"></P>
+          <script>
+            let park={
+                name:"national park",
+                Rs:890,
+            };
+            let value=JSON.stringify(park);
+            document.getElementById("ask").innerHTML=value;
+          </script>
+          <!-- stingify array -->
+          <P id="tea"></P>
+          <script>
+            let car=["kia","Honda","fararii","lambargini"];
+            document.getElementById("tea").innerHTML=JSON.stringify(car);
+          </script>
+</body>
+</html>
