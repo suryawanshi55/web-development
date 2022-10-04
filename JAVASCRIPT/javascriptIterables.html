@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Iterables</title>
+</head>
+<body>
+    <p id="tree"></p>
+    <script>
+        let name="important";
+        let txt=""
+        for (let x of name){
+            txt += x+ "<br>";
+
+        }
+        document.getElementById("tree").innerHTML=txt;
+
+    </script>
+    <P id="hi"></P>
+    <script>
+        let tree=["leaves","root","fruit","flower"]
+        let text="";
+        for(let y in tree){
+            text += y+ "<br>";
+
+        }
+        document.getElementById("hi").innerHTML=text;
+    </script>
+    <P id="jk"></P>
+    <script>
+        function mynumber(){
+            let n=0;
+            return{
+                next:function(){
+                    n +=10;
+                    return{value:n,done:false};
+                }
+            }
+        }
+        const n=mynumber();
+        n.next();
+        n.next();
+        document.getElementById("jk").innerHTML=n.next().value;
+    </script>
+</body>
+</html>
