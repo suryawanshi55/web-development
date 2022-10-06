@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="loginform.css">
+</head>
+<body>
+
+
+
+    <div id="id1" class="modal">
+        
+       
+    </div>
+
+    <form class="modal-content animation" method="post">
+        <div class="imgcontainer">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.g8MFaGOjn9ZPb9cgrtrOkwHaHa&pid=Api&P=0" height="100px" width="100px" class="avatar">
+        </div> 
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember">Remember me
+            </label>
+        </div>
+        <div class="container" style="background-color:#f1f1f1 ;">
+        <button type="button" onclick="document.getElementById('id1').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot<a href="#">Password</a></span>
+    </div>
+    </form>
+    <script src="loginform.js"></script>
+</body>
+</html>
