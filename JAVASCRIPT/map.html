@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map() method</title>
+</head>
+<body>
+    <!-- create a javascript map by using new map() and map.set() -->
+    <P id="demo"></P>
+    <script>
+     let fruit= new Map([
+        ["mango",789],
+        ["banana",450],
+        ["grapes",899]
+
+     ]);
+     document.getElementById("demo").innerHTML=fruit.get("mango");
+    </script>
+    <P id="try"></P>
+    <script>
+        let brand= new Map();
+            brand.set("kia",899),
+            brand.set("hondai",766),
+            brand.set("tata",345)
+       
+        document.getElementById("try").innerHTML=brand.get("tata");
+    </script>
+    <P id="sdk"></P>
+    <script>
+        let fruits= new Map([
+            ['pear',400],
+            ['pumkin',560]
+        ]);
+        fruits.set("pumkin",239)
+        document.getElementById("sdk").innerHTML=fruits.get("pumkin");
+        document.getElementById("sdk").innerHTML=fruits.has("pumkin");
+        document.getElementById("sdk").innerHTML=fruits instanceof Map;
+        
+
+    </script>
+</body>
+</html>
