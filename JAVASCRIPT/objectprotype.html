@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript object protype</title>
+</head>
+<body>
+    <P id="demo"></P>
+<script>
+    function person(frist,last,age,hobby){
+        this.fristname=frist;
+        this.lastname=last;
+        this.age=age;
+        this.hobby=hobby;
+    };
+    let man=new person("shree","sinde",34,"drawing");
+    let women=new person("pooja","sharma",55,"painting");
+    document.getElementById("demo").innerHTML=man.fristname+" "+man.age+" "+women.fristname;
+</script>
+<P id="try"></P>
+<script>
+    function man(frist,last,age,hobby){
+        this.fristname=frist;
+        this.lastname=last;
+        this.age=age;
+        this.hobby=hobby;
+    };
+    man.prototype.nationality="indian";
+    let male=new man("shree","sinde",34,"drawing");
+    let female=new man("pooja","sharma",55,"painting");
+    document.getElementById("try").innerHTML= male.nationality;
+</script>
+ </body>
+ </html>

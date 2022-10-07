@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript set</title>
+</head>
+<body>
+    <P id="hk"></P>
+    <P id="kl"></P>
+    <script>
+        let letter= new Set(["a","b","c","d","f"]);
+        document.getElementById("hk").innerHTML=letter.size;
+        ///////////////////////////////////
+        let sice= new Set();
+        sice.add("a");
+        sice.add("b");
+        sice.add("c");
+        sice.add("d");
+        document.getElementById("kl").innerHTML=sice.size;
+    </script>
+    <!-- for each() method-->
+    <P id="bn"></P>
+    <script>
+        let kbc = new set(["a","b","c"]);
+        let text="";
+        kbc.foreach (function(value){
+            text +=value +"<br>";
+        })
+        document.getElementById("bn").innerHTML=text;
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object properties</title>
+</head>
+<body>
+    <!-- Accesing property with .property -->
+    <P id="demo"></P>
+    <script>
+        let house={
+            name:"galaxy",
+            color:"red",
+            
+        }
+        document.getElementById("demo").innerHTML=house.name+" "+house.color;
+    </script>
+    <!-- Accesing property with ["property"] -->
+    <P id="try"></P>
+    <script>
+        let course={
+            name:"Python",
+            fees:13000,
+        }
+        document.getElementById("try").innerHTML=course["name"]+" "+course["fees"];
+    </script>
+                 <!-- Looping object property values -->
+                 <P id="gh"></P>
+                 <script>
+                    let person={
+                        name:"rohan",
+                        course:"master of science"
+                    };
+                    let vh="";
+                    for(let x in person){
+                        vh +=person[x]+" ";
+
+                    }
+                    document.getElementById("gh").innerHTML=vh;
+
+                 </script>
+                 <!-- Adding new property -->
+                 <P id="jk"></P>
+                 <script>
+                    let boy={
+                        name:"rohan",
+                        age:45,
+                    };
+                    boy.nationality="Indian";
+                    document.getElementById("jk").innerHTML=boy.name+" "+boy.nationality;
+                 </script>
+                    <!-- Deleting a property -->
+<P id="jkl"></P>
+<script>
+   let boy={
+       name:"rohan",
+       age:45,
+   };
+   delete boy.age;
+   document.getElementById("jkl").innerHTML=boy.name+" "+boy.age+"years";
+</script>
+                <!-- Nested object      -->
+</body>
+</html>

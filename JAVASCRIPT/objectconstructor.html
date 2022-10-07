@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object constructor</title>
+</head>
+<body>
+    <P id="demo"></P>
+    <Script>
+        function person(frist,last,age,work){
+        this.fristName=frist;
+        this.lastName=last;
+        this.age=age;
+        this.work=work;
+        }
+        const man=new person("Anuj","shinde",56,"IT");
+        document.getElementById("demo").innerHTML="my father is doing work in "+man.work+" company";
+    </Script>
+</body>
+</html>
