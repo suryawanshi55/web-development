@@ -1,6 +1,9 @@
-console.table({harry:"this",marks:"67"});
-console.warn('this is a warning');
-console.error('this is a error');
-console.time('mycode');
-console.clear();
-console.assert('');
+function changeText(id){
+    id.innerHTML="ooops!";
+}
+
+
+
+function displayDate(){
+    document.getElementById("try").innerHTML=Date();
+}

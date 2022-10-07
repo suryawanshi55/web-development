@@ -1,0 +1,13 @@
+#containor{
+     height: 500px;
+     width: 500px;
+     position: relative;
+     background: black;
+     margin-left: 30%;
+}
+#animation{
+    height: 100px;
+    width: 100px;
+    position:absolute;
+    background: rgb(230, 7, 156);
+}
