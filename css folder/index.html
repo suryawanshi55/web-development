@@ -1,35 +1,37 @@
-!DOCTYPE html>
-<html-lang="en">
-    <head>
-        <title>flex</title> 
-        <link rel="stylesheet" href="style.css"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+</head>
+<body>
+    <h1>my frist SVG</h1>
+    <svg width="100" height="100"><circle cx="50" cy="50" r="40" stroke="green" stroke-width="2" fill="aqua"></circle></svg>
+    <!-- browser doesnot support inline SVG -->
+ <svg width="100" height="100"><rect width="300" height="100" style="fill: pink"; stroke-width="4" stroke="blue"></svg>
+    <!-- <svg width="400" height="300"> -->
+       <svg>
+        <rect height="200" width="200" style="fill: blue"; stroke="red" stroke-width="3"></rect></svg>
+        <svg height="300" width="300">
+            <defs>
+                <filter id="f1" x="0" y="0">
+                    <feGaussianBlur in="sourceGraphic" stdDeviation="15"></feGaussianBlur>
 
-        
-    </head>
-    <body>
-        <!-- <div class="maincontainer"> -->
-         <!-- <div class="fitem"> this is heaven</div>
-         <div class="fitem"> this is html</div>
-         <div class="fitem"> this is house</div>
-         <div class="fitem"> this is css</div> -->
-
-
-
-        <div class="colums">
-         <div class="css">1 rose flower are red</div>
-         <div class="css">2 sunflower is one of the flower</div>
-         <div class="css">3 flower are different types and each flower has its different colour</div>
-         <div class="css">4 chemistry in which we can study the different element</div>
-         <div class="css">5 in inida, different types of languages </div>
-
-
-
-         
-         
-
-    </div>
-
-    </body>
-    
+            </filter>
+        </defs>
+        <rect height="300" width="300" stroke="hotpink" stroke-width="4" fill="yellow" filter="url(#f1)"></rect>
+        </svg>
 
 
+
+
+
+<br>
+
+        <!-- create a canvas -->
+        <h1>create a canvas clock</h1>
+        <canvas id="canvas" width="300" height="300" style="background-color:orange ;"></canvas>
+</body>
+</html>
