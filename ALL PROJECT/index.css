@@ -1,0 +1,22 @@
+#panel,#flip{
+    padding: 5px;
+    text-align: center;
+    background-color: black;
+    color: antiquewhite;
+    border: 1px solid #c3c3c3;
+    margin: auto;
+    
+}
+#panel{
+    height: 200px;
+    width: 300px;
+}
+#flip{
+    height: 20px;
+    width: 300px;
+    margin-top: 155px;
+}
+#panel{
+    
+    display: none;
+}
