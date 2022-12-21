@@ -1,0 +1,17 @@
+
+body{
+    background-color: rgb(249, 9, 249);
+    height: 380px;
+    width: 90px;
+    border: 2px solid black;
+     display: flex; 
+    margin: auto;
+    padding: 3em;
+    margin-top: 55px;
+    color: rgb(12, 12, 12);
+    font-size: large;
+ }
+ body:hover{
+    color: antiquewhite;
+ }
+ 
