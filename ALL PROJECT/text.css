@@ -1,0 +1,31 @@
+body {
+    height: 100vh;
+     display:flex;
+     justify-content:center;
+     align-items:center;
+    background-image:linear-gradient(to bottom,aqua,deeppink);
+  }
+  h1{
+    color:wheat;
+  font-size:50px;
+    text-transform:capitalize;
+  }
+  span:before{
+    content:"TRANSITION";
+    text-transform:capitalize;
+    font-family:arial;
+    color:gold;
+    animation:word-switch 5s infinite;
+  
+  }
+  @keyframes word-switch{
+    0%{
+      content:"transition ";
+    }
+    50%{
+      content:"animation ";
+    }
+    100%{
+      content:"transition ";
+    }
+  }
