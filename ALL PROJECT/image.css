@@ -1,0 +1,20 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+    letter-spacing: 1rem;
+    font-size: 100px;
+    font-weight: 800;
+    background-image: url(https://th.bing.com/th/id/OIP.yxD5rYx77zogjOiMLCkdqwHaEK?w=312&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7);
+    text-transform: uppercase;
+    background-clip: text;
+   -webkit-background-clip: text;
+     color: transparent;
+     
+}
