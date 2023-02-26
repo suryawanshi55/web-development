@@ -1,31 +1,12 @@
-body {
-    height: 100vh;
-     display:flex;
-     justify-content:center;
-     align-items:center;
-    background-image:linear-gradient(to bottom,aqua,deeppink);
-  }
-  h1{
-    color:wheat;
-  font-size:50px;
-    text-transform:capitalize;
-  }
-  span:before{
-    content:"TRANSITION";
-    text-transform:capitalize;
-    font-family:arial;
-    color:gold;
-    animation:word-switch 5s infinite;
-  
-  }
-  @keyframes word-switch{
-    0%{
-      content:"transition ";
-    }
-    50%{
-      content:"animation ";
-    }
-    100%{
-      content:"transition ";
-    }
-  }
+.main-1{
+    background-image: url("https://t4.ftcdn.net/jpg/03/08/58/07/240_F_308580761_AhOQrxEXjb5XNR2OpNBfxXtUS4Ro6IJ6.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 500px;
+    color: white;
+    font-size: x-large;
+    padding: 4px;
+    padding-left: 15px;
+    border-radius: 8px;
+    text-rendering: auto;
+}
